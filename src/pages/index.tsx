@@ -6,11 +6,11 @@ import Contact from './sections/contact';
 import Navigation from './sections/navigation';
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState('home');
+  // const [activeSection, setActiveSection] = useState('home');
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Navigation />
       <main className="relative">
         <Hero />
         <About />
