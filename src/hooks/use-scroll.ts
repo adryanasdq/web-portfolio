@@ -2,15 +2,23 @@ import { useEffect, useState, useCallback } from 'react';
 
 const SECTIONS = ['about', 'projects', 'contact'];
 
-
 export const useScroll = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [scrollProgress, setScrollProgress] = useState(0);
     const [activeSection, setActiveSection] = useState('');
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-            if (window.scrollY < 50) setActiveSection('');
+            const winScroll = window.scrollY;
+            
+            setScrolled(winScroll > 50);
+            if (winScroll < 50) setActiveSection('');
+
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            if (height > 0) {
+                const scrolledPercentage = (winScroll / height) * 100;
+                setScrollProgress(scrolledPercentage);
+            }
         };
 
         const observerOptions = {
@@ -27,6 +35,8 @@ export const useScroll = () => {
             });
         }, observerOptions);
 
+        handleScroll();
+
         window.addEventListener('scroll', handleScroll, { passive: true });
         SECTIONS.forEach((id) => {
             const el = document.getElementById(id);
@@ -40,11 +50,16 @@ export const useScroll = () => {
     }, []);
 
     const scrollToSection = useCallback((sectionId: string) => {
+        if (!sectionId) {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            return;
+        }
+        
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
     }, []);
 
-    return { scrolled, activeSection, scrollToSection };
+    return { scrolled, scrollProgress, activeSection, scrollToSection };
 };
