@@ -1,36 +1,28 @@
-export default function Hero() {
+const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        <div className="mb-6">
-          <div className="inline-block px-4 py-2 bg-accent rounded-full mb-8">
-            <span className="text-sm text-accent-foreground">Available for work</span>
+    <section id="home" className="hero bg-base-200 min-h-screen">
+      <div className="hero-content flex-col lg:flex-row-reverse">
+        <img
+          src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+          className="max-w-sm rounded-lg shadow-2xl"
+        />
+        <div className="flex flex-col gap-2">
+          <h2 className="text-xl">Adryan Ashidiq</h2>
+          <h1 className="text-5xl my-4 font-bold">
+            Fullstack Developer
+          </h1>
+          <h3 className="text-lg leading-tight">Turning Complex Business <span className="text-primary italic">Logic</span> into Seamless Products. </h3>
+          <div className="flex flex-col gap-8">
+            <p>From .NET Web Apps to E-commerce platforms and LMS dashboards — I build end-to-end solutions that are fast, secure, and user-centric. With more than 2 years of experience in delivering and supporting software for global users, I help brands modernize their digital infrastructure</p>
+            <div className="flex gap-4">
+              <button className="btn btn-primary"><a download={true} href="/src/assets/CV Adryan (2026).pdf">My Resume</a></button>
+              <button className="btn btn-primary">Contact Me</button>
+            </div>
           </div>
-        </div>
-
-        <h1 className="text-6xl md:text-8xl font-medium mb-6 tracking-tight">
-          Creative Developer
-        </h1>
-
-        <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I design and build digital experiences that merge creativity with functionality
-        </p>
-
-        <div className="flex gap-4 justify-center">
-          <a
-            href="#projects"
-            className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
-          >
-            View Work
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-3 border border-border rounded-lg hover:bg-accent transition-colors"
-          >
-            Get in Touch
-          </a>
         </div>
       </div>
     </section>
   );
 }
+
+export default Hero;

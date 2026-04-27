@@ -6,7 +6,7 @@ const Navigation = () => {
 
   return (
     <nav className='fixed top-0 left-0 right-0 z-50 transition-all duration-300'>
-      <progress className="progress progress-primary fixed top-0 w-full h-0.5" value={scrollProgress} max="100"></progress>
+      <progress className="progress progress-primary fixed top-0 w-full h-1" value={scrollProgress} max="100"></progress>
       <div className='flex justify-between items-center p-6'>
         <div className='flex items-center'>
           <button
