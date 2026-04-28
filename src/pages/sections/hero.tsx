@@ -15,7 +15,7 @@ const Hero = () => {
           <div className="flex flex-col gap-8">
             <p>From .NET Web Apps to E-commerce platforms and LMS dashboards — I build end-to-end solutions that are fast, secure, and user-centric. With more than 2 years of experience in delivering and supporting software for global users, I help brands modernize their digital infrastructure</p>
             <div className="flex gap-4">
-              <button className="btn btn-primary"><a download={true} href="/src/assets/CV Adryan (2026).pdf">My Resume</a></button>
+              <button className="btn btn-primary"><a download={true} href="/src/assets/file/CV Adryan (2026).pdf">My Resume</a></button>
               <button className="btn btn-primary">Contact Me</button>
             </div>
           </div>
