@@ -1,5 +1,5 @@
 import { WORK_EXPERIENCE } from "@/data/static/work-exp-static";
-import { Calendar, Factory, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 const About = () => {
   const carreerStart = new Date(2023, 9, 1);
@@ -32,8 +32,12 @@ const About = () => {
 
             <div className="flex flex-col gap-6 w-3/5">
               <div className="flex gap-6">
-                <div className="hidden lg:block">
-                  <img src={exp.logo} className="w-40 h-40"/>
+                <div className="group flex items-center justify-center col-span-12 md:col-span-4 h-40 w-40 bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                  <img
+                    alt="Logo"
+                    src={exp.logo}
+                    className="w-40 h-40 object-contain transition-transform duration-500 ease-out group-hover:scale-125"
+                  />
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -66,7 +70,7 @@ const About = () => {
 
               <div className="card bg-base-200/40 backdrop-blur-sm border border-base-content/5 shadow-sm">
                 <div className="card-body p-6">
-                  <h6 className="text-xs font-bold tracking-widest text-secondary mb-2 uppercase">💻 Key Responsibilities</h6>
+                  <h6 className="text-sm font-bold tracking-widest text-secondary mb-2 uppercase">💻 Key Responsibilities</h6>
                   <div className="flex flex-col gap-4">
                     {exp.responsibilities.map((point, index) => (
                       <div key={index} className="flex gap-4">

@@ -23,7 +23,7 @@ export const WORK_EXPERIENCE: Experience[] = [
     position: "Software Developer",
     location: "Bandung, Indonesia",
     period: "Jan 2025 - May 2025",
-    logo: "/src/assets/img/navcore.jpg",
+    logo: "/src/assets/img/navcore.png",
     tags: ["Fullstack", "React", "FastAPI"],
     description: "Act as a full-stack developer of a scalable mobile marketplace and an integrated ERP solution, utilizing modern frameworks to bridge seamless user experiences with complex backend logic.",
     responsibilities: [
@@ -41,9 +41,9 @@ export const WORK_EXPERIENCE: Experience[] = [
     period: "Sept 2023 - Dec 2024",
     logo: "/src/assets/img/medco.png",
     tags: [".NET Framework", "Web Form", "Global Support"],
-    description: "",
+    description: "Engineered a centralized enterprise web platform, integrating critical workflows across HR, Finance, Supply Chain, and Plant Maintenance for global operations",
     responsibilities: [
-      "Scalable Engineering: Architected high-quality web solutions utilizing ASP.NET, focusing on long-term maintainability and performance scalability.",
+      "Scalable Engineering: Architected high-quality web solutions utilizing .NET Framework, focusing on long-term maintainability and performance scalability.",
       "System Integrity: Guaranteed application reliability through proactive debugging and thorough quality assurance, ensuring prompt resolution of technical bottlenecks.",
       "Lifecycle Management: Facilitated the entire development lifecycle by aligning with stakeholders on business goals and producing detailed technical guides for future feature development.",
     ],
