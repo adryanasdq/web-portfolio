@@ -31,7 +31,7 @@ const SkillSet = () => {
 
             <div className="flex flex-col gap-8">
                 <div className="flex justify-center">
-                    <div className="join bg-base-200/40 backdrop-blur-sm border border-base-content/5 shadow-sm p-1">
+                    <div className="join bg-base-200/40 backdrop-blur-sm border border-base-content/5 shadow-sm p-1 rounded-lg">
                         {skillGroups.map((group) => (
                             <button
                                 key={group.value}
