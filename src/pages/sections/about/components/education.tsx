@@ -48,13 +48,13 @@ const Education = () => {
                 <div className="md:col-span-2 lg:col-span-2 p-6 rounded-3xl bg-base-200/40 border border-white/5 flex flex-col gap-3 hover:border-primary/30">
                     <div className="w-10 h-10 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary font-bold">🔬</div>
                     <h4 className="font-bold text-lg leading-tight">Research</h4>
-                    <p className="text-sm text-base-content/70">Published a solar cell study in a Q2 Scopus-indexed journal and presented findings at a 2021 International Conference.</p>
+                    <p className="text-sm text-base-content/70">Published a solar cell study in a <span className="text-primary font-bold">Q2 Scopus-indexed journal</span> and presented findings at a 2021 International Conference.</p>
                 </div>
 
                 <div className="md:col-span-2 lg:col-span-2 p-6 rounded-3xl bg-base-200/40 border border-white/5 flex flex-col gap-3 hover:border-primary/30">
                     <div className="w-10 h-10 rounded-xl bg-accent/20 flex items-center justify-center text-accent font-bold">🏆</div>
                     <h4 className="font-bold text-lg leading-tight">Leadership</h4>
-                    <p className="text-sm text-base-content/70">Successfully led a scientific project team to secure silver and bronze medals in international science competitions.</p>
+                    <p className="text-sm text-base-content/70">Successfully led a scientific project team to secure <span className="text-primary font-bold">silver and bronze medals</span> in <span className="text-primary font-bold">international science competitions</span>.</p>
                 </div>
 
                 <div className="md:col-span-1 lg:col-span-1 p-6 rounded-3xl bg-base-200/40 border border-white/5 flex flex-col items-center justify-center text-center hover:border-primary/30">
