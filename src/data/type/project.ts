@@ -3,8 +3,9 @@ interface IProject {
     title: string;
     desc: string;
     bg: string;
-    thumbSrc: string;
+    img: string[];
     tag: string;
+    isAvailable: boolean;
 }
 
 export { IProject }
