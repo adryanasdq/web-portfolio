@@ -34,7 +34,7 @@ const Education = () => {
 
                 <div className="md:col-span-2 lg:col-span-2 h-64 rounded-3xl overflow-hidden border border-white/5 relative group">
                     <img
-                        src="src/assets/img/edu1.jpg"
+                        src="/assets/img/edu1.jpg"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         alt="Graduation"
                     />
@@ -72,7 +72,7 @@ const Education = () => {
                 </div>
 
                 <div className="md:col-span-2 lg:col-span-2 h-40 rounded-3xl overflow-hidden border border-white/5 relative group">
-                    <img src="src/assets/img/edu2.jpeg" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Campus Life" />
+                    <img src="/assets/img/edu2.jpeg" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="Campus Life" />
                     <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-white text-3xl font-black uppercase tracking-[0.2em] text-center drop-shadow-xl">
                         UPI

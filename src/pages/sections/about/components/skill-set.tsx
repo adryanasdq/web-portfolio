@@ -59,15 +59,13 @@ const SkillSet = () => {
                                             {category.data.map((s) => {
                                                 const Icon = s.icon;
                                                 return (
-                                                    <>
-                                                        <div
-                                                            key={s.skill}
-                                                            className="badge badge-outline badge-primary badge-sm gap-2 p-5 hover:bg-primary hover:text-primary-content transition-all cursor-default"
-                                                        >
-                                                            <Icon size={20} />
-                                                            <span className="font-medium text-white">{s.skill}</span>
-                                                        </div>
-                                                    </>
+                                                    <div
+                                                        key={s.skill}
+                                                        className="badge badge-outline badge-primary badge-sm gap-2 p-5 hover:bg-primary hover:text-primary-content transition-all cursor-default"
+                                                    >
+                                                        <Icon size={20} />
+                                                        <span className="font-medium text-white">{s.skill}</span>
+                                                    </div>
                                                 );
                                             })}
                                         </div>

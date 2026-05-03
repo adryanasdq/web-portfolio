@@ -7,7 +7,7 @@ export const WORK_EXPERIENCE: Experience[] = [
     position: "Software Engineer",
     location: "Bandung, Indonesia",
     period: "June 2025 - Present",
-    logo: "/src/assets/img/lgsm.jpeg",
+    logo: "/assets/img/lgsm.jpeg",
     tags: ["Frontend", "IT Support", "Smart Factory", "Code Review"],
     description: "Architected web applications while providing specialized technical support for global smart factory logistics and production-line systems.",
     responsibilities: [
@@ -23,7 +23,7 @@ export const WORK_EXPERIENCE: Experience[] = [
     position: "Software Developer",
     location: "Bandung, Indonesia",
     period: "Jan 2025 - May 2025",
-    logo: "/src/assets/img/navcore.png",
+    logo: "/assets/img/navcore.png",
     tags: ["Fullstack", "React", "FastAPI"],
     description: "Act as a full-stack developer of a scalable mobile marketplace and an integrated ERP solution, utilizing modern frameworks to bridge seamless user experiences with complex backend logic.",
     responsibilities: [
@@ -39,7 +39,7 @@ export const WORK_EXPERIENCE: Experience[] = [
     position: ".NET Developer",
     location: "Jakarta, Indonesia",
     period: "Sept 2023 - Dec 2024",
-    logo: "/src/assets/img/medco.png",
+    logo: "/assets/img/medco.png",
     tags: [".NET Framework", "Web Form", "Global Support"],
     description: "Engineered a centralized enterprise web platform, integrating critical workflows across HR, Finance, Supply Chain, and Plant Maintenance for global operations",
     responsibilities: [

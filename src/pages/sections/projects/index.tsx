@@ -1,62 +1,80 @@
 import { projects } from "@/data/static/project-static";
 
-
 const Projects = () => {
   return (
-    <section id="projects" className="min-h-screen py-20 flex flex-col items-center justify-center bg-base-100">
-      <div className="max-w-6xl mx-auto w-full px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-2 uppercase tracking-widest">Projects</h1>
-          <p className="text-base-content/70 tracking-widest uppercase text-sm">
-            Swipe to explore my work
+    <section id="projects" className="bg-black py-20">
+      <div className="max-w-6xl mx-auto w-full px-4 py-10">
+        <div className="text-center mb-16 space-y-4">
+          <h1 className="text-5xl font-bold tracking-widest uppercase">Projects</h1>
+          <p className="text-primary font-medium tracking-widest text-xs uppercase">
+            Complex Logic — Functional Design
           </p>
+
+          <div className="max-w-2xl mx-auto pt-4">
+            <p className="text-sm opacity-60 italic">
+              Most of my professional work is hosted in private repositories. The selections below serve as a technical showcase of my development workflow and architectural style.
+            </p>
+          </div>
         </div>
 
-        <div className="carousel carousel-center w-full p-4 space-x-4 bg-transparent rounded-box overflow-x-auto scrollbar-hide">
+        <div className="flex flex-col gap-12">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="carousel-item flex-none w-[85vw] md:w-[400px] lg:w-[450px] transition-all duration-500 ease-in-out hover:scale-[1.02]"
+              className="relative w-full md:h-[600px] overflow-hidden rounded-sm group"
             >
-              <div className="relative h-[500px] w-full group overflow-hidden rounded-3xl border border-base-content/10 shadow-2xl">
-                <figure>
-                  <img src="" />
-                </figure>
+              <div className="absolute inset-0">
+                <img
+                  src={project.bg}
+                  className="w-full h-full object-cover opacity-60 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/20 to-transparent" />
+              </div>
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent group-hover:via-black/50 transition-all duration-500" />
+              <div className="relative z-10 h-full w-full p-8 md:p-16 flex items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center w-full">
 
-                <div className="absolute bottom-0 left-0 p-8 w-full">
-                  <div className="flex flex-col gap-2">
-                    <span className="badge badge-primary badge-sm uppercase tracking-widest">
-                      {project.tag}
-                    </span>
+                  <div className="text-white space-y-6">
+                    <div className="space-y-1">
+                      <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2 uppercase tracking-tighter">
+                        {project.title} <span className="text-lg">↗</span>
+                      </h2>
+                      <p className="text-[10px] tracking-[0.3em] opacity-50 uppercase">
+                        {/* {project.year} | {project.location} */}TEST
+                      </p>
+                    </div>
 
-                    <h3 className="text-2xl font-bold text-white">
-                      {project.title}
-                    </h3>
-
-                    <div className="max-h-0 group-hover:max-h-40 overflow-hidden transition-all duration-700 ease-in-out">
-                      <p className="text-white/70 text-sm mt-2 line-clamp-3">
+                    <div className="space-y-3">
+                      <p className="text-[10px] font-bold tracking-[0.2em] text-white/60 uppercase">
+                        {project.tag}
+                      </p>
+                      <h3 className="text-3xl md:text-5xl font-black leading-[1.1] uppercase">
+                        {/* {project.headline} */}HEADLINE
+                      </h3>
+                      <p className="text-xs md:text-sm text-white/70 leading-relaxed max-w-sm">
                         {project.desc}
                       </p>
-                      <button className="btn btn-primary btn-sm mt-4 no-animation">
-                        View Project
-                      </button>
+                    </div>
+
+                    <button className="btn btn-outline border-white/40 text-white rounded-none hover:bg-white hover:text-black uppercase text-[10px] tracking-widest px-6 bg-black/20 backdrop-blur-sm">
+                      Under NDA - No Case Study
+                    </button>
+                  </div>
+
+                  <div className="relative hidden lg:flex justify-center items-center">
+                    <div className="w-full max-w-[550px] transform transition-all duration-500">
+                      <img
+                        src={project.thumbSrc}
+                        alt="Interface Screenshot"
+                        className="w-full h-auto shadow-2xl rounded-md border border-white/10"
+                      />
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="flex justify-center mt-8 lg:hidden">
-          <div className="flex gap-1 opacity-30">
-            <div className="w-8 h-1 bg-base-content rounded-full"></div>
-            <div className="w-2 h-1 bg-base-content rounded-full"></div>
-            <div className="w-2 h-1 bg-base-content rounded-full"></div>
-          </div>
         </div>
       </div>
     </section>
