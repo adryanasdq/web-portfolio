@@ -46,12 +46,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     <p className="text-sm text-base-content/70 leading-relaxed">
                         {project.desc}
                     </p>
-                <button
-                    onClick={() => closeModal()}
-                    className="btn btn-primary w-full shadow-lg"
-                >
-                    Close
-                </button>
+                    <div className="flex gap-4 justify-center">
+                        {project.isAvailable
+                            ? (
+                                <>
+                                    <button className="btn btn-primary shadow-lg">
+                                        <a href={project.url} target="blank">Visit</a>
+                                    </button>
+                                    <button
+                                        onClick={() => closeModal()}
+                                        className="btn btn-primary btn-outline shadow-lg"
+                                    >Close</button>
+                                </>
+                            ) : (
+                                <>
+                                    <button
+                                        onClick={() => closeModal()}
+                                        className="btn btn-outline border-white/40 text-white rounded-none hover:bg-white hover:text-black uppercase text-[10px] tracking-widest px-6 bg-black/20 backdrop-blur-sm"
+                                    >🚧 Under Construction 🚧</button>
+                                </>
+                            )
+                        }
+                    </div>
                 </div>
 
             </div>

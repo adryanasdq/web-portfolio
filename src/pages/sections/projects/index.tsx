@@ -66,10 +66,9 @@ const Projects = () => {
 
                       <button
                         onClick={() => openModal(project)}
-                        className={`btn btn-outline ${project.isAvailable ? '' : 'btn-disabled'} border-white/40 text-white rounded-none hover:bg-white hover:text-black uppercase text-[10px] tracking-widest px-6 bg-black/20 backdrop-blur-sm`}
+                        className={`btn btn-outline border-white/40 text-white rounded-none hover:bg-white hover:text-black uppercase text-[10px] tracking-widest px-6 bg-black/20 backdrop-blur-sm`}
                       >
-                        {project.isAvailable ?
-                        'Details' : '🚧 Under Construction 🚧'}
+                        Details
                       </button>
                     </div>
 

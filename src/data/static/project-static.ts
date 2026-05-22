@@ -7,6 +7,7 @@ export const defaultProject: IProject = {
     img: [],
     bg: "",
     tag: "",
+    url: "",
     isAvailable: false,
 }
 
@@ -18,6 +19,7 @@ export const projects: IProject[] = [
         img: ["/assets/img/erp-1.png", "/assets/img/erp-2.png", "/assets/img/erp-3.png"],
         bg: "/assets/img/erp-bg.jpg",
         tag: "Fullstack",
+        url: "",
         isAvailable: true,
     },
     {
@@ -27,6 +29,7 @@ export const projects: IProject[] = [
         img: ["/assets/img/hris-1.png", "/assets/img/hris-2.png", "/assets/img/hris-3.png"],
         bg: "/assets/img/lms-bg.png",
         tag: "Frontend",
+        url: "https://hris.lgsinarmas.com",
         isAvailable: true,
     },
     {
@@ -36,6 +39,7 @@ export const projects: IProject[] = [
         img: ["/assets/img/jp-1.png", "/assets/img/jp-2.png", "/assets/img/jp-3.png"],
         bg: "/assets/img/jp-bg.jpg",
         tag: "Fullstack",
+        url: "",
         isAvailable: true,
     },
     {
@@ -45,6 +49,7 @@ export const projects: IProject[] = [
         img: ["/assets/img/tpc.png"],
         bg: "/assets/img/timesheet-bg.jpeg",
         tag: "Fullstack",
+        url: "",
         isAvailable: false,
     },
 ];

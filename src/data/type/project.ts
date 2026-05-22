@@ -5,6 +5,7 @@ interface IProject {
     bg: string;
     img: string[];
     tag: string;
+    url: string;
     isAvailable: boolean;
 }
 
