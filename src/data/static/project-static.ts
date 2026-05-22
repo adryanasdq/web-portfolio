@@ -19,7 +19,7 @@ export const projects: IProject[] = [
         img: ["/assets/img/erp-1.png", "/assets/img/erp-2.png", "/assets/img/erp-3.png"],
         bg: "/assets/img/erp-bg.jpg",
         tag: "Fullstack",
-        url: "",
+        url: "https://erp-fe-coral.vercel.app",
         isAvailable: true,
     },
     {
@@ -40,7 +40,7 @@ export const projects: IProject[] = [
         bg: "/assets/img/jp-bg.jpg",
         tag: "Fullstack",
         url: "",
-        isAvailable: true,
+        isAvailable: false,
     },
     {
         id: 4,
