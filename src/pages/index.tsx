@@ -1,5 +1,5 @@
 import Hero from './sections/hero';
-import About from './sections/about';
+import About from './sections/about/index';
 import Projects from './sections/projects';
 import Contact from './sections/contact';
 import Navigation from './sections/navigation';
@@ -7,13 +7,13 @@ import Navigation from './sections/navigation';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
-      <main className="relative">
-        <Hero />
+    <div className="">
+      {/* <Navigation /> */}
+      <main className="">
+        {/* <Hero /> */}
         <About />
-        <Projects />
-        <Contact />
+        {/* <Projects /> */}
+        {/* <Contact /> */}
       </main>
     </div>
   );
