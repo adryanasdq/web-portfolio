@@ -8,13 +8,14 @@ import Navigation from './sections/navigation';
 export default function App() {
   return (
     <div className="">
-      {/* <Navigation /> */}
-      <main className="">
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
+      <Navigation>
+        <main className="">
+          <Hero />
+          <About />
+          <Projects />
+          <Contact />
+        </main>
+      </Navigation>
     </div>
   );
 }

@@ -5,7 +5,7 @@ const Hero = () => {
 
   return (
     <section id="home" className="hero bg-base-200 min-h-screen px-4 sm:px-8">
-      <div className="hero-content flex-col lg:flex-row-reverse gap-12 lg:gap-20 max-w-6xl">
+      <div className="hero-content flex-col lg:flex-row-reverse gap-12 lg:gap-24 max-w-6xl">
 
         <div className="flex-shrink-0">
           <img
@@ -15,15 +15,15 @@ const Hero = () => {
           />
         </div>
 
-        <div className="space-y-6 text-left max-w-xl">
+        <div className="space-y-2 md:space-y-4 lg:space-y-6 text-left max-w-xl">
           <div>
             <h2 className="text-base lg:text-xl font-medium tracking-wide text-base-content/80">
               Adryan Ashidiq
             </h2>
-            <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold tracking-tight mt-1 mb-3">
+            <h1 className="text-xl md:text-5xl lg:text-5xl font-extrabold tracking-tight mt-1 mb-3">
               Fullstack Developer
             </h1>
-            <h3 className="sm:text-lg font-medium text-base-content/90">
+            <h3 className="text-sm lg:text-lg font-medium text-base-content/90">
               Turning Complex Business{" "}
               <span className="text-primary italic font-semibold">Logic</span>{" "}
               into Seamless Products.
