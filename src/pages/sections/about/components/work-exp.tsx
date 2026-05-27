@@ -26,14 +26,14 @@ const WorkExperience = () => {
             )}
           </div>
 
-          <div className="card md:card-side bg-base-200 shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-primary/20 border border-transparent">
+          <div className="card md:card-side bg-base-200/40 shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-primary/20 border border-transparent">
 
-            <figure className="p-6 md:p-8 bg-base-300 flex items-center justify-center md:w-48 shrink-0">
+            <figure className="p-6 md:p-8 bg-black flex items-center justify-center md:w-48 shrink-0">
               <div className="w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-xl bg-white flex items-center justify-center shadow-md">
                 <img
                   alt={`${exp.company} Logo`}
                   src={exp.logo}
-                  className="object-contain p-2 transition-transform duration-500 ease-out group-hover:scale-110"
+                  className="object-contain transition-transform duration-500 ease-out group-hover:scale-110"
                 />
               </div>
             </figure>
@@ -71,7 +71,7 @@ const WorkExperience = () => {
                 </p>
 
                 <div>
-                  <h4 className="text-xs md:text-sm lg:text-sm font-bold uppercase tracking-wider text-base-content opacity-50 mb-1.5">Key Responsibilities</h4>
+                  <h4 className="text-xs md:text-sm lg:text-sm font-bold uppercase tracking-wider text-white mb-1.5">Key Responsibilities</h4>
                   <ul className="list-disc list-inside space-y-1 pl-1">
                     {exp.responsibilities.map((point, index) => (
                       <div key={index} className="flex gap-4">
