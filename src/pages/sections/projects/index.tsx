@@ -21,13 +21,13 @@ const Projects = () => {
       <section id="projects" className="bg-black py-20">
         <div className="max-w-6xl mx-auto w-full px-4 py-10">
           <div className="text-center mb-16 space-y-4">
-            <h1 className="text-5xl font-bold tracking-widest uppercase">Projects</h1>
-            <p className="text-primary font-medium tracking-widest text-xs uppercase">
+            <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 uppercase tracking-widest">Projects</h1>
+            <p className="text-xs lg:text-sm text-base-content/70 tracking-widest uppercase">
               Complex Logic — Functional Design
             </p>
 
             <div className="max-w-2xl mx-auto pt-4">
-              <p className="text-sm opacity-60 italic">
+              <p className="text-xs md:text-sm lg:text-sm italic tracking-wide leading-relaxed opacity-80">
                 Most of my professional work is hosted in private repositories. The selections below serve as a technical showcase of my development workflow and architectural style.
               </p>
             </div>
@@ -53,10 +53,10 @@ const Projects = () => {
 
                     <div className="text-white space-y-6">
                       <div className="space-y-3">
-                        <p className="font-bold tracking-[0.2em] uppercase text-primary">
+                        <p className="text-base md:text-xl font-bold tracking-[0.2em] uppercase text-primary">
                           {project.tag}
                         </p>
-                        <h3 className="text-3xl md:text-5xl font-black leading-[1.1] uppercase">
+                        <h3 className="text-2xl md:text-4xl font-black leading-[1.1] uppercase">
                           {project.title}
                         </h3>
                         <p className="text-xs md:text-sm text-white/70 leading-relaxed max-w-sm">

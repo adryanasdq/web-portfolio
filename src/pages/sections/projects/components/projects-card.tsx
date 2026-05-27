@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                             >
                                 <img
                                     src={img}
-                                    className="w-full object-cover h-80 sm:h-96" 
+                                    className="w-full object-contain h-80 sm:h-96" 
                                     alt=""
                                 />
                             </div>

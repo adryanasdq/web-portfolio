@@ -34,7 +34,7 @@ export const projects: IProject[] = [
     },
     {
         id: 3,
-        title: "Job Portal (Legacy)",
+        title: "Job Portal",
         desc: "My very first fullstack development project built using vanilla HTML, CSS, and Javascript",
         img: ["/assets/img/jp-1.png", "/assets/img/jp-2.png", "/assets/img/jp-3.png"],
         bg: "/assets/img/jp-bg.jpg",

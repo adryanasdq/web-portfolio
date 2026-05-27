@@ -11,7 +11,7 @@ const WorkExperience = () => {
     <div className="max-w-6xl mx-auto w-full">
       <div className="text-center mb-6 md:mb-12 lg:mb-16">
         <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 uppercase tracking-widest">EXPERIENCE</h1>
-        <p className="text-xs lg:text-sm text-base-content/70 italic">
+        <p className="text-xs lg:text-sm text-base-content/70 tracking-widest uppercase">
           Professional journey as a Fullstack Developer for {yearsOfExperience}+ years.
         </p>
       </div>

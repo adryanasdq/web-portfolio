@@ -12,8 +12,8 @@ export default function App() {
       <main className="">
         {/* <Hero /> */}
         <About />
-        {/* <Projects /> */}
-        {/* <Contact /> */}
+        <Projects />
+        <Contact />
       </main>
     </div>
   );
