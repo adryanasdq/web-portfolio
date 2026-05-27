@@ -17,20 +17,20 @@ const Hero = () => {
 
         <div className="space-y-6 text-left max-w-xl">
           <div>
-            <h2 className="text-xl font-medium tracking-wide text-base-content/80">
+            <h2 className="text-base lg:text-xl font-medium tracking-wide text-base-content/80">
               Adryan Ashidiq
             </h2>
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight mt-1 mb-3">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl font-extrabold tracking-tight mt-1 mb-3">
               Fullstack Developer
             </h1>
-            <h3 className="text-lg sm:text-xl font-medium text-base-content/90">
+            <h3 className="sm:text-lg font-medium text-base-content/90">
               Turning Complex Business{" "}
               <span className="text-primary italic font-semibold">Logic</span>{" "}
               into Seamless Products.
             </h3>
           </div>
 
-          <p className="text-base leading-relaxed text-base-content/80">
+          <p className="text-xs md:text-base lg:text-base leading-relaxed text-base-content/80">
             From .NET Web Apps to E-commerce platforms and LMS dashboards — I
             build end-to-end solutions that are fast, secure, and user-centric.
             With more than 2 years of experience in delivering and supporting

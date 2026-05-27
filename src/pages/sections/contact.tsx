@@ -11,7 +11,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20">
-      <div className="max-w-4xl mx-auto w-full text-center">
+      <div className="max-w-4xl mx-auto w-full text-center bg-base-200">
         <h2 className="text-4xl md:text-6xl font-medium mb-6">Let's Connect!</h2>
 
         <p className="text-base lg:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">

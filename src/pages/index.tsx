@@ -10,7 +10,7 @@ export default function App() {
     <div className="">
       {/* <Navigation /> */}
       <main className="">
-        {/* <Hero /> */}
+        <Hero />
         <About />
         <Projects />
         <Contact />
