@@ -1,5 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 
+import Section from '@/components/section';
+
 
 export default function Contact() {
   const socials = [
@@ -10,9 +12,10 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center px-6 py-20 bg-base-200">
+    <Section id="contact" className="min-h-screen bg-base-200 flex items-center justify-center px-6 py-20 bg-base-200">
       <div className="max-w-4xl mx-auto w-full text-center">
         <h2 className="text-4xl md:text-6xl font-medium mb-6">Let's Connect!</h2>
+        <span className="loading loading-dots loading-xl my-4" />
 
         <p className="text-base lg:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
           I'm always interested in hearing about new opportunity or collaboration.
@@ -51,6 +54,6 @@ export default function Contact() {
           </p>
         </footer>
       </div>
-    </section>
+    </Section>
   );
 }

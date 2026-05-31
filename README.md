@@ -4,4 +4,7 @@ Welcome! This repository is a dedicated technical showcase of my fullstack engin
 
 Tech Summary:
 - Core: React
-- UI Styling: Tailwind CSS + daisyUI
+- UI Styling: Tailwind CSS + daisyUI + Framer Motion
+
+
+Design is inspired from jesky.dev

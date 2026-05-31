@@ -1,10 +1,11 @@
+import Section from "@/components/section";
 import { useScroll } from "@/hooks/use-scroll";
 
 const Hero = () => {
   const { scrollToSection } = useScroll();
 
   return (
-    <section id="home" className="hero bg-base-200 min-h-screen px-4 sm:px-8">
+    <Section id="home" className="hero bg-base-200 min-h-screen px-4 sm:px-8">
       <div className="hero-content flex-col lg:flex-row-reverse gap-12 lg:gap-24 max-w-6xl">
 
         <div className="flex-shrink-0">
@@ -56,7 +57,7 @@ const Hero = () => {
         </div>
 
       </div>
-    </section>
+    </Section>
   );
 };
 

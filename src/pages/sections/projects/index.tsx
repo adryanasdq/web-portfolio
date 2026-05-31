@@ -3,7 +3,10 @@ import { useState } from "react";
 import { defaultProject, projects } from "@/data/static/project-static";
 import { IProject } from "@/data/type/project";
 
+import Section from "@/components/section";
+
 import ProjectCard from "./components/projects-card";
+
 
 const Projects = () => {
   const [project, setProject] = useState(defaultProject);
@@ -18,7 +21,7 @@ const Projects = () => {
     <>
       <ProjectCard project={project} />
 
-      <section id="projects" className="bg-black py-20">
+      <Section id="projects" className="py-20">
         <div className="max-w-6xl mx-auto w-full px-4 py-10">
           <div className="text-center mb-16 space-y-4">
             <h1 className="text-xl md:text-2xl lg:text-4xl font-bold mb-2 uppercase tracking-widest">Projects</h1>
@@ -88,7 +91,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
     </>
   );
 };

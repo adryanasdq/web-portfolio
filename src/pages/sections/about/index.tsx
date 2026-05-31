@@ -5,7 +5,7 @@ import WorkExperience from "./components/work-exp";
 
 const About = () => {
     return (
-        <section id="about" className="bg-black flex flex-col gap-20 px-4 py-20">
+        <section id="about" className="flex flex-col gap-20 px-4 py-20">
             <Education />
             <SkillSet />
             <WorkExperience />
